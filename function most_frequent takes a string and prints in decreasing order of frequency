@@ -1,0 +1,8 @@
+def_most_frequent_str = (input('Enter a string: '))
+l= def_most_frequent_str.lower()
+string_dict = dict()
+for letter in reversed(l):
+        if letter not in string_dict:
+            string_dict[letter] = l.count(letter)
+
+print(string_dict)
